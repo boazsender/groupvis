@@ -12,21 +12,25 @@ module.exports = function(grunt) {
         ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
     },
     lint: {
-      files: ['grunt.js', 'lib/**/*.js', 'test/**/*.js']
-    },
-    qunit: {
-      files: ['test/**/*.html']
+      files: ['grunt.js', 'src/tooltip.js', 'src/bubblechart.js', 'src/vis.js']
     },
     concat: {
       dist: {
-        src: ['<banner:meta.banner>', '<file_strip_banner:lib/<%= pkg.name %>.js>'],
-        dest: 'dist/<%= pkg.name %>.js'
+        src: ['<banner:meta.banner>', 'src/tooltip.js', 'src/bubblechart.js', 'src/vis.js'],
+        dest: 'dist/bp_bubblechart.js'
       }
     },
     min: {
       dist: {
-        src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],
-        dest: 'dist/<%= pkg.name %>.min.js'
+        src: ['<banner:meta.banner>', 'dist/bp_bubblechart.js'],
+        dest: 'dist/bp_bubblechart.min.js'
+      }
+    },
+    mincss: {
+      compress: {
+        files: {
+          "dist/bp_bubblechart.css": ["styles.css"]
+        }
       }
     },
     watch: {
@@ -52,7 +56,8 @@ module.exports = function(grunt) {
     uglify: {}
   });
 
-  // Default task.
-  grunt.registerTask('default', 'lint qunit concat min');
+  grunt.loadNpmTasks('grunt-contrib-mincss');
 
+  // Default task.
+  grunt.registerTask('default', 'lint concat min mincss');
 };

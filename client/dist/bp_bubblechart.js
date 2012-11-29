@@ -1,4 +1,38 @@
-(function(global) {
+/*! groupvis - v0.0.1 - 2012-11-29
+* Copyright (c) 2012 ; Licensed MIT */
+
+(function(global, d3) {
+
+  var Tooltip = global.Tooltip = function(text) {
+    this.t = d3.select("body")
+      .append("div")
+      .classed("bp-tooltip", true)
+      .html(text);
+  };
+
+  Tooltip.prototype.show = function(event) {  
+    this.t.style("visibility", "visible");
+    this.update(event);
+  };
+
+  Tooltip.prototype.hide = function(event) {  
+    this.t.style("visibility", "hidden");
+  };
+
+  Tooltip.prototype.remove = function(event) {  
+    this.t.remove();
+  };
+
+  Tooltip.prototype.update = function(event) {
+    this.t
+      .style("top", (event.pageY-10)+"px")
+      .style("left", (event.pageX+10)+"px");
+  };
+
+}(this, this.d3));
+(function(global, _, d3) {
+
+  var Tooltip = global.Tooltip;
 
   var BubbleChart = global.BubbleChart = function(options) {
     options = options || {};
@@ -12,8 +46,6 @@
     this.max_collaborators = 0;
 
     this.template = options.template || null;
-
-    this.colorMode
 
     // define centers
     // global center
@@ -36,10 +68,11 @@
     
     // per user
     if (this.users) {
+      var i;
       this.user_centers = {};
       if (this.users.length < 5) {
         // one row
-        for (var i = 0; i < this.users.length; i++) {
+        for (i = 0; i < this.users.length; i++) {
           this.user_centers[this.users[i]] = {
             x : (this.width / this.users.length) * (i + 1),
             y : this.height / 2
@@ -47,7 +80,7 @@
         }
       } else {
         // two rows, get top row
-        for (var i = 0; i < Math.ceil(this.users.length / 2); i++) {
+        for (i = 0; i < Math.ceil(this.users.length / 2); i++) {
           this.user_centers[this.users[i]] = {
             x : (this.width / Math.ceil(this.users.length / 2)) * (i + 1),
             y : this.height / 3
@@ -55,14 +88,13 @@
         }
         // get bottom row
         var counter = 1;
-        for (var i = Math.ceil(this.users.length / 2); i < this.users.length; i++) {
+        for (i = Math.ceil(this.users.length / 2); i < this.users.length; i++) {
           this.user_centers[this.users[i]] = {
             x : (this.width / Math.floor(this.users.length / 2)) * counter,
             y : (this.height / 3) * 2
           }; 
           counter++;
         }
-        console.log(this.user_centers)
       }
     }
 
@@ -109,7 +141,7 @@
 
         // place randomly in space
         x : Math.random() * this.width,
-        y : Math.random() * this.height,
+        y : Math.random() * this.height
       };
 
       if (repoInfo.users.length > this.max_collaborators) {
@@ -123,7 +155,7 @@
         node.group = "two";
       } else {
         node.group = "many";
-      };
+      }
 
       this.nodes.push(node);
 
@@ -223,7 +255,7 @@
       .on("tick", function(e) {
         self.circles.each(self[move_function].apply(self, [e.alpha]))
           .attr("cx", function(d) { return d.x; })
-          .attr("cy", function(d) { return d.y; })
+          .attr("cy", function(d) { return d.y; });
       });
 
     this.force.start();
@@ -250,27 +282,28 @@
       d.x = d.x + (center.x - d.x) * (self.damper + 0.02) * alpha;
       d.y = d.y + (center.y - d.y) * (self.damper + 0.02) * alpha;
 
-    }
+    };
   };
 
   BubbleChart.prototype.moveTowardsUsers = function(alpha) {
     var self = this;
     return function(d) {
       // if we have an owner, move it into place. Otherwise, move it out of view.
+      var center;
       if (d.owner !== null) {
         center = self.user_centers[d.owner];
       } else {
         // out of view
         center = {
           x : d.x,
-          y : d.y > (self.height/2) ? self.height + 100 : self.height - 100
-        }
+          y : d.y > (self.height/2) ? self.height + 100 : - 100
+        };
       }
 
       d.x = d.x + (center.x - d.x) * (self.damper + 0.02) * alpha;
       d.y = d.y + (center.y - d.y) * (self.damper + 0.02) * alpha;
-    }
-  }
+    };
+  };
 
   // assign each user a color
   BubbleChart.prototype.getColors = function() {
@@ -278,13 +311,13 @@
     if (this.color_mode === "user") {
     
       return d3.scale.category20()
-        .domain(Object.keys(repos));
+        .domain(Object.keys(this.users));
     
     } else if (this.color_mode === "size") {
 
       // change this to custom colors by size
       return d3.scale.category20b()
-        .domain(histogram);
+        .domain(this.histogram);
     } else if (this.color_mode === "collaboratorCount") {
       
       // by number of collaborators
@@ -294,5 +327,70 @@
         .range(["#EDD155", "#7aa25c", "#B86CAF"]);
     }
   };
+
+}(this, this._, this.d3));
+(function() {
+
+  var chart = null;
+  var BubbleChart = this.BubbleChart;
+  var _ = this._;
+  var $ = this.$;
+
+  // map:
+  // { userName : [their, repos] }
+  var repos;
+
+  // map: 
+  // { repo : numberOfUsers }
+  var repoCountMap = {};
+
+  // histogram:
+  // number of repos with that many users. Uses index position as shared
+  // counter.
+  var histogram = [];
+
+  // collaborators
+  var users;
+
+  // my deferreds.
+  var dataDeferred = $.Deferred(),
+      dataProcessed = dataDeferred.promise();
+
+  // process data
+  $.getJSON("data/bocoup_github.json").then(function(repos) {
+    repoCountMap = repos.repos;
+    histogram = repos.histogram;
+    users = repos.users;
+
+    dataDeferred.resolve();
+  }).fail(function(err) {
+    dataDeferred.reject(err);
+  });
+
+  dataProcessed.then(function() {
+    chart = new BubbleChart({
+      data : repoCountMap,
+      el : '#bp_bubblechart',
+      users: users,
+      template : _.template("<div class='bp-tooltip-name'><%= repo.name %></div>" +
+        "<% if (repo.owner) { %>" +
+        "  <div class='bp-tooltip-owner'>by <%= repo.owner %> </div>" +
+        "<% } %>" +
+        "<% if (repo.collaborators) { %>" +
+        "<div>Contributors:</div>" +
+        "<div class='bp-tooltip-contributors'><%= repo.collaborators.join(', ') %></div>" +
+        "<% } %>")
+    });
+
+    chart.start();
+    chart.display('moveTowardsCenter'); // start at center.
+
+
+    $('#bp_controls div').click(function(e) {
+      var button = e.target;
+      chart.display(button.id);
+    });
+    
+  });
 
 }(this));

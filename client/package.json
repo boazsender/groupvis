@@ -1,0 +1,22 @@
+{
+  "name":        "groupvis",
+  "version":     "0.0.1",
+  "author":      "Irene Ros",
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        "http://github.com/github/hubot/raw/master/LICENSE"
+  }],
+
+  "repository" : {
+    "type": "git",
+    "url":  "https://github.com/iros/groupvis.git"
+  },
+
+  "devDependencies" : {
+    "grunt-contrib-mincss" : "*"
+  },
+  
+  "engines": {
+    "node": "0.8.x"
+  }
+}

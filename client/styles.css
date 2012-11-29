@@ -1,3 +1,8 @@
+#bp_bubblechart {
+  width: 950px;
+  height: 440px;
+}
+
 .bp-tooltip {
   position : absolute;
   visibility: hidden;
@@ -25,7 +30,7 @@
   cursor: pointer;
 }
 
-#controls div {
+#bp_controls div {
   width: 303px;
   margin-left: 10px;
   padding: 3px;
@@ -38,28 +43,28 @@
   opacity: 0.5;           /* fx, safari, opera */
 }
 
-#controls #moveTowardsUsers {
+#bp_controls #moveTowardsUsers {
   background-color: #EDD155;
   color: #EDD155;
 }
 
-#controls #moveTowardsOwnerCenters {
+#bp_controls #moveTowardsOwnerCenters {
   background-color: #7aa25c;
   color: #7aa25c;
 }
 
-#controls #moveTowardsCenter {
+#bp_controls #moveTowardsCenter {
   background-color: #B86CAF;
   color: #B86CAF;
 }
 
-#controls #moveTowardsUsers:hover, 
-#controls #moveTowardsOwnerCenters:hover, 
-#controls #moveTowardsCenter:hover {
+#bp_controls #moveTowardsUsers:hover, 
+#bp_controls #moveTowardsOwnerCenters:hover, 
+#bp_controls #moveTowardsCenter:hover {
   color: white;
   font-weight:bold;
 }
-#controls div:hover {
+#bp_controls div:hover {
   cursor: pointer;
   filter: alpha(opacity=80); /* internet explorer */
   -khtml-opacity: 0.8;      /* khtml, old safari */

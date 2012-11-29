@@ -1,4 +1,4 @@
-(function(global) {
+(function(global, d3) {
 
   var Tooltip = global.Tooltip = function(text) {
     this.t = d3.select("body")
@@ -26,4 +26,4 @@
       .style("left", (event.pageX+10)+"px");
   };
 
-}(this));
+}(this, this.d3));

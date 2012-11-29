@@ -1,7 +1,10 @@
-$(function() {
+(function() {
 
   var chart = null;
-  
+  var BubbleChart = this.BubbleChart;
+  var _ = this._;
+  var $ = this.$;
+
   // map:
   // { userName : [their, repos] }
   var repos;
@@ -36,7 +39,7 @@ $(function() {
   dataProcessed.then(function() {
     chart = new BubbleChart({
       data : repoCountMap,
-      el : '#container',
+      el : '#bp_bubblechart',
       users: users,
       template : _.template("<div class='bp-tooltip-name'><%= repo.name %></div>" +
         "<% if (repo.owner) { %>" +
@@ -52,10 +55,11 @@ $(function() {
     chart.display('moveTowardsCenter'); // start at center.
 
 
-    $('#controls div').click(function(e) {
+    $('#bp_controls div').click(function(e) {
       var button = e.target;
       chart.display(button.id);
-    })
+    });
+    
   });
 
 }(this));
