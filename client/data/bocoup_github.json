@@ -1,347 +1,5 @@
 {
     "repos": {
-        "jQuery-Twitter-Plugin": {
-            "count": 5,
-            "users": [
-                "ajpiano",
-                "boazsender",
-                "iros",
-                "jugglinmike",
-                "rwldrn"
-            ],
-            "owner": "boazsender"
-        },
-        "web-learn-jquery-com": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "Bocoup_Project": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "pkarl"
-            ]
-        },
-        "protobot": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "danheberden"
-            ]
-        },
-        "WAT": {
-            "count": 7,
-            "users": [
-                "ajpiano",
-                "boazsender",
-                "danheberden",
-                "iros",
-                "cowboy",
-                "rmurphey",
-                "rwldrn"
-            ]
-        },
-        "jquery-ui-notification": {
-            "count": 3,
-            "users": [
-                "ajpiano",
-                "boazsender",
-                "danheberden"
-            ]
-        },
-        "norby": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "jquery": {
-            "count": 7,
-            "users": [
-                "ajpiano",
-                "boazsender",
-                "danheberden",
-                "cowboy",
-                "jugglinmike",
-                "rdworth",
-                "rmurphey"
-            ]
-        },
-        "jqfundamentals": {
-            "count": 3,
-            "users": [
-                "ajpiano",
-                "danheberden",
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "jquery-module": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "large-jquery-apps": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "refactor-jquery": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "txjs-site": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "bro": {
-            "count": 3,
-            "users": [
-                "ajpiano",
-                "danheberden",
-                "rwldrn"
-            ],
-            "owner": "rwldrn"
-        },
-        "jquery-docs": {
-            "count": 3,
-            "users": [
-                "ajpiano",
-                "danheberden",
-                "rdworth"
-            ]
-        },
-        "widget-factory-docs": {
-            "count": 3,
-            "users": [
-                "ajpiano",
-                "danheberden",
-                "rdworth"
-            ]
-        },
-        "collabracode": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "yayquery_site": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rmurphey"
-            ]
-        },
-        "jQuery.event.special.hashchange": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rmurphey"
-            ]
-        },
-        "yayqueryPad": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rmurphey"
-            ]
-        },
-        "backbone-boilerplate": {
-            "count": 4,
-            "users": [
-                "ajpiano",
-                "boazsender",
-                "jugglinmike",
-                "rwldrn"
-            ]
-        },
-        "Backbone.localStorage": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "blockui": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "Boot": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "grunt-jquery-content": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rdworth"
-            ]
-        },
-        "highlight.js": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "iliad": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "jquery-boilerplate": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "jQuery-Presentation": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "jquery-ui": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "danheberden"
-            ]
-        },
-        "jquery.ui-tokenlist": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "js1k-organ1k": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "cowboy"
-            ],
-            "owner": "cowboy"
-        },
-        "learn.jquery.com": {
-            "count": 4,
-            "users": [
-                "ajpiano",
-                "jorydotcom",
-                "jugglinmike",
-                "rmurphey"
-            ]
-        },
-        "node-pygmentize": {
-            "count": 2,
-            "users": [
-                "ajpiano",
-                "rdworth"
-            ],
-            "owner": "rdworth"
-        },
-        "w3fools": {
-            "count": 3,
-            "users": [
-                "ajpiano",
-                "boazsender",
-                "danheberden"
-            ]
-        },
-        "wintersmith": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ]
-        },
-        "ajpiano.github.com": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "bellevuesfinest": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "boilerplate-boilerplate": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "fixingthesejquery": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "Gitpicking": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "grunt-wintersmith": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "onelessjpg": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "widgetfactory": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "wintersmith-ordered-pages": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
-        "wordgame-strategy": {
-            "count": 1,
-            "users": [
-                "ajpiano"
-            ],
-            "owner": "ajpiano"
-        },
         "jquery-event-target": {
             "count": 1,
             "users": [
@@ -355,6 +13,18 @@
                 "rwldrn"
             ]
         },
+        "WAT": {
+            "count": 7,
+            "users": [
+                "boazsender",
+                "danheberden",
+                "ajpiano",
+                "cowboy",
+                "iros",
+                "rwldrn",
+                "rmurphey"
+            ]
+        },
         "GenderRemixer": {
             "count": 1,
             "users": [
@@ -365,6 +35,18 @@
             "count": 1,
             "users": [
                 "boazsender"
+            ]
+        },
+        "jquery": {
+            "count": 7,
+            "users": [
+                "boazsender",
+                "danheberden",
+                "ajpiano",
+                "cowboy",
+                "jugglinmike",
+                "rmurphey",
+                "rdworth"
             ]
         },
         "Abacus": {
@@ -386,6 +68,15 @@
             "users": [
                 "boazsender",
                 "iros",
+                "rwldrn"
+            ]
+        },
+        "backbone-boilerplate": {
+            "count": 4,
+            "users": [
+                "boazsender",
+                "ajpiano",
+                "jugglinmike",
                 "rwldrn"
             ]
         },
@@ -421,6 +112,14 @@
             ],
             "owner": "rwldrn"
         },
+        "jquery-ui-notification": {
+            "count": 3,
+            "users": [
+                "boazsender",
+                "danheberden",
+                "ajpiano"
+            ]
+        },
         "Leaflet": {
             "count": 1,
             "users": [
@@ -444,8 +143,8 @@
             "users": [
                 "boazsender",
                 "danheberden",
-                "iros",
-                "cowboy"
+                "cowboy",
+                "iros"
             ]
         },
         "polymapper": {
@@ -469,6 +168,14 @@
                 "rmurphey"
             ],
             "owner": "rmurphey"
+        },
+        "w3fools": {
+            "count": 3,
+            "users": [
+                "boazsender",
+                "danheberden",
+                "ajpiano"
+            ]
         },
         "wtfjs": {
             "count": 1,
@@ -547,6 +254,17 @@
             ],
             "owner": "boazsender"
         },
+        "jQuery-Twitter-Plugin": {
+            "count": 5,
+            "users": [
+                "boazsender",
+                "ajpiano",
+                "jugglinmike",
+                "iros",
+                "rwldrn"
+            ],
+            "owner": "boazsender"
+        },
         "mobilecheckbox": {
             "count": 2,
             "users": [
@@ -576,105 +294,39 @@
             ],
             "owner": "boazsender"
         },
-        "akihabara": {
-            "count": 1,
+        "jqfundamentals": {
+            "count": 3,
             "users": [
-                "dariusk"
-            ]
-        },
-        "akihabara_tutorials": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ]
-        },
-        "bite-the-bullet": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ]
-        },
-        "akiba": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ]
-        },
-        "Another-World-Bytecode-Interpreter": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ]
-        },
-        "boxbox": {
-            "count": 4,
-            "users": [
-                "dariusk",
-                "incompl",
-                "jugglinmike",
-                "pkarl"
+                "danheberden",
+                "ajpiano",
+                "rmurphey"
             ],
-            "owner": "incompl"
+            "owner": "rmurphey"
         },
-        "ffo": {
-            "count": 1,
+        "jquery-docs": {
+            "count": 3,
             "users": [
-                "dariusk"
+                "danheberden",
+                "ajpiano",
+                "rdworth"
             ]
         },
-        "mantra": {
-            "count": 1,
+        "widget-factory-docs": {
+            "count": 3,
             "users": [
-                "dariusk"
+                "danheberden",
+                "ajpiano",
+                "rdworth"
             ]
         },
-        "Prince-of-Persia-Apple-II": {
-            "count": 1,
+        "bro": {
+            "count": 3,
             "users": [
-                "dariusk"
-            ]
-        },
-        "ColorSprite": {
-            "count": 1,
-            "users": [
-                "dariusk"
+                "danheberden",
+                "ajpiano",
+                "rwldrn"
             ],
-            "owner": "dariusk"
-        },
-        "gqTest": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ],
-            "owner": "dariusk"
-        },
-        "metaphor-a-minute": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ],
-            "owner": "dariusk"
-        },
-        "outslide": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ],
-            "owner": "dariusk"
-        },
-        "teamsnake-simple": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ],
-            "owner": "dariusk"
-        },
-        "wolf3d": {
-            "count": 1,
-            "users": [
-                "dariusk"
-            ],
-            "owner": "dariusk"
+            "owner": "rwldrn"
         },
         "dotfiles": {
             "count": 6,
@@ -683,8 +335,8 @@
                 "cowboy",
                 "jugglinmike",
                 "pkarl",
-                "rmurphey",
-                "rwldrn"
+                "rwldrn",
+                "rmurphey"
             ],
             "owner": "rmurphey"
         },
@@ -706,14 +358,21 @@
             "users": [
                 "danheberden",
                 "cowboy",
-                "rdworth",
-                "rmurphey"
+                "rmurphey",
+                "rdworth"
             ]
         },
         "jquery-color": {
             "count": 1,
             "users": [
                 "danheberden"
+            ]
+        },
+        "jquery-ui": {
+            "count": 2,
+            "users": [
+                "danheberden",
+                "ajpiano"
             ]
         },
         "jQuery.Mines": {
@@ -732,6 +391,13 @@
             "count": 1,
             "users": [
                 "danheberden"
+            ]
+        },
+        "protobot": {
+            "count": 2,
+            "users": [
+                "danheberden",
+                "ajpiano"
             ]
         },
         "snippets.js": {
@@ -878,262 +544,105 @@
             ],
             "owner": "danheberden"
         },
-        "TileMillUK": {
+        "akihabara": {
             "count": 1,
             "users": [
-                "iros"
+                "dariusk"
             ]
         },
-        "drinks": {
+        "akihabara_tutorials": {
             "count": 1,
             "users": [
-                "iros"
+                "dariusk"
             ]
         },
-        "RNA": {
+        "bite-the-bullet": {
             "count": 1,
             "users": [
-                "iros"
+                "dariusk"
             ]
         },
-        "recon_frontend": {
-            "count": 3,
+        "akiba": {
+            "count": 1,
             "users": [
-                "iros",
+                "dariusk"
+            ]
+        },
+        "Another-World-Bytecode-Interpreter": {
+            "count": 1,
+            "users": [
+                "dariusk"
+            ]
+        },
+        "boxbox": {
+            "count": 4,
+            "users": [
+                "dariusk",
+                "incompl",
                 "jugglinmike",
                 "pkarl"
-            ]
-        },
-        "joystick.js": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "recon_backend": {
-            "count": 3,
-            "users": [
-                "iros",
-                "jugglinmike",
-                "pkarl"
-            ]
-        },
-        "underscore.math": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "miso.fs": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "d3-bootstrap-plugins": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "bower": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "clearance": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "deck.js": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "devise": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "grunt-bbb": {
-            "count": 2,
-            "users": [
-                "iros",
-                "jugglinmike"
-            ]
-        },
-        "jodoc-js": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "johnny-five": {
-            "count": 2,
-            "users": [
-                "iros",
-                "rmurphey"
-            ]
-        },
-        "juggernaut": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "node-google-sql": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "node-serialport": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "paper.js": {
-            "count": 2,
-            "users": [
-                "iros",
-                "rdworth"
-            ]
-        },
-        "processing-js": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "ruby-echonest": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "StartupDataTrends": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "wordcloud": {
-            "count": 1,
-            "users": [
-                "iros"
-            ]
-        },
-        "adayofmbta-js": {
-            "count": 2,
-            "users": [
-                "iros",
-                "rwldrn"
-            ],
-            "owner": "iros"
-        },
-        "clientsidedata": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "deck.js-codemirror": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "groupvis": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "moonshine_nodejs": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "mp3app": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "nodecoptering": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "spotify-npr-allsongs": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "underscore.nest": {
-            "count": 1,
-            "users": [
-                "iros"
-            ],
-            "owner": "iros"
-        },
-        "csslayoutsite": {
-            "count": 2,
-            "users": [
-                "isaacdurazo",
-                "incompl"
             ],
             "owner": "incompl"
         },
-        "slotmachine": {
+        "ffo": {
             "count": 1,
             "users": [
-                "isaacdurazo"
+                "dariusk"
             ]
         },
-        "senderfund.com": {
-            "count": 2,
+        "mantra": {
+            "count": 1,
             "users": [
-                "isaacdurazo",
-                "pkarl"
+                "dariusk"
+            ]
+        },
+        "Prince-of-Persia-Apple-II": {
+            "count": 1,
+            "users": [
+                "dariusk"
+            ]
+        },
+        "ColorSprite": {
+            "count": 1,
+            "users": [
+                "dariusk"
             ],
-            "owner": "pkarl"
+            "owner": "dariusk"
         },
-        "backbone.layoutmanager.docs": {
+        "gqTest": {
             "count": 1,
             "users": [
-                "isaacdurazo"
-            ]
-        },
-        "gruntjs.com": {
-            "count": 1,
-            "users": [
-                "isaacdurazo"
-            ]
-        },
-        "try_git": {
-            "count": 2,
-            "users": [
-                "isaacdurazo",
-                "jorydotcom"
+                "dariusk"
             ],
-            "owner": "jorydotcom"
+            "owner": "dariusk"
+        },
+        "metaphor-a-minute": {
+            "count": 1,
+            "users": [
+                "dariusk"
+            ],
+            "owner": "dariusk"
+        },
+        "outslide": {
+            "count": 1,
+            "users": [
+                "dariusk"
+            ],
+            "owner": "dariusk"
+        },
+        "teamsnake-simple": {
+            "count": 1,
+            "users": [
+                "dariusk"
+            ],
+            "owner": "dariusk"
+        },
+        "wolf3d": {
+            "count": 1,
+            "users": [
+                "dariusk"
+            ],
+            "owner": "dariusk"
         },
         "express-messages": {
             "count": 1,
@@ -1145,6 +654,14 @@
             "count": 1,
             "users": [
                 "incompl"
+            ],
+            "owner": "incompl"
+        },
+        "csslayoutsite": {
+            "count": 2,
+            "users": [
+                "incompl",
+                "isaacdurazo"
             ],
             "owner": "incompl"
         },
@@ -1282,6 +799,274 @@
             ],
             "owner": "incompl"
         },
+        "web-learn-jquery-com": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "Bocoup_Project": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "pkarl"
+            ]
+        },
+        "norby": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "jquery-module": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "large-jquery-apps": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "refactor-jquery": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "txjs-site": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "collabracode": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "yayquery_site": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rmurphey"
+            ]
+        },
+        "jQuery.event.special.hashchange": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rmurphey"
+            ]
+        },
+        "yayqueryPad": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rmurphey"
+            ]
+        },
+        "Backbone.localStorage": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "blockui": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "Boot": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "grunt-jquery-content": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rdworth"
+            ]
+        },
+        "highlight.js": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "iliad": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "jquery-boilerplate": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "jQuery-Presentation": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "jquery.ui-tokenlist": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "js1k-organ1k": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "cowboy"
+            ],
+            "owner": "cowboy"
+        },
+        "learn.jquery.com": {
+            "count": 4,
+            "users": [
+                "ajpiano",
+                "jorydotcom",
+                "jugglinmike",
+                "rmurphey"
+            ]
+        },
+        "node-pygmentize": {
+            "count": 2,
+            "users": [
+                "ajpiano",
+                "rdworth"
+            ],
+            "owner": "rdworth"
+        },
+        "wintersmith": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ]
+        },
+        "ajpiano.github.com": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "bellevuesfinest": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "boilerplate-boilerplate": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "fixingthesejquery": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "Gitpicking": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "grunt-wintersmith": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "onelessjpg": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "widgetfactory": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "wintersmith-ordered-pages": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "wordgame-strategy": {
+            "count": 1,
+            "users": [
+                "ajpiano"
+            ],
+            "owner": "ajpiano"
+        },
+        "slotmachine": {
+            "count": 1,
+            "users": [
+                "isaacdurazo"
+            ]
+        },
+        "senderfund.com": {
+            "count": 2,
+            "users": [
+                "isaacdurazo",
+                "pkarl"
+            ],
+            "owner": "pkarl"
+        },
+        "backbone.layoutmanager.docs": {
+            "count": 1,
+            "users": [
+                "isaacdurazo"
+            ]
+        },
+        "gruntjs.com": {
+            "count": 1,
+            "users": [
+                "isaacdurazo"
+            ]
+        },
+        "try_git": {
+            "count": 2,
+            "users": [
+                "isaacdurazo",
+                "jorydotcom"
+            ],
+            "owner": "jorydotcom"
+        },
         "jory-learns-javascript": {
             "count": 1,
             "users": [
@@ -1311,8 +1096,8 @@
             "count": 3,
             "users": [
                 "cowboy",
-                "rdworth",
-                "rwldrn"
+                "rwldrn",
+                "rdworth"
             ],
             "owner": "rdworth"
         },
@@ -1826,6 +1611,22 @@
             ],
             "owner": "pkarl"
         },
+        "recon_backend": {
+            "count": 3,
+            "users": [
+                "jugglinmike",
+                "iros",
+                "pkarl"
+            ]
+        },
+        "recon_frontend": {
+            "count": 3,
+            "users": [
+                "jugglinmike",
+                "iros",
+                "pkarl"
+            ]
+        },
         "backbone.layoutmanager": {
             "count": 1,
             "users": [
@@ -1854,6 +1655,13 @@
             "count": 1,
             "users": [
                 "jugglinmike"
+            ]
+        },
+        "grunt-bbb": {
+            "count": 2,
+            "users": [
+                "jugglinmike",
+                "iros"
             ]
         },
         "html5please": {
@@ -1991,232 +1799,197 @@
             ],
             "owner": "jugglinmike"
         },
-        "aviatejs": {
+        "TileMillUK": {
             "count": 1,
             "users": [
-                "rdworth"
+                "iros"
             ]
         },
-        "leaderboard": {
+        "drinks": {
             "count": 1,
             "users": [
-                "rdworth"
+                "iros"
             ]
         },
-        "jquery-ui-extensions": {
+        "RNA": {
             "count": 1,
             "users": [
-                "rdworth"
+                "iros"
             ]
         },
-        "temp-jquery-bar": {
+        "joystick.js": {
             "count": 1,
             "users": [
-                "rdworth"
+                "iros"
             ]
         },
-        "amplify": {
+        "underscore.math": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "miso.fs": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "d3-bootstrap-plugins": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "bower": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "clearance": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "deck.js": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "devise": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "jodoc-js": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "johnny-five": {
             "count": 2,
             "users": [
-                "rdworth",
+                "iros",
+                "rmurphey"
+            ]
+        },
+        "juggernaut": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "node-google-sql": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "node-serialport": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "paper.js": {
+            "count": 2,
+            "users": [
+                "iros",
+                "rdworth"
+            ]
+        },
+        "processing-js": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "ruby-echonest": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "StartupDataTrends": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "wordcloud": {
+            "count": 1,
+            "users": [
+                "iros"
+            ]
+        },
+        "adayofmbta-js": {
+            "count": 2,
+            "users": [
+                "iros",
                 "rwldrn"
-            ]
-        },
-        "AnythingZoomer": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "community-updates": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "doT": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "fathom": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "grunt-compare-size": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "grunt-contrib-qunit": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jQCon-SF2012-Notes": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "JQuery-Combinators": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jquery-offline": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jquery-tmpl": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jquery-ui-carousel": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jquery-validation": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jquerypp": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jsdoc-toolkit": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "jsrender": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "king_tour": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "node-polyglot": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "node-wordpress": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "nodeguide.com": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "notmuch-web": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "olado.github.com": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "popcorn.sequence": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "simple-history": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "sizzle": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "svgboilerplate": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "UITest": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "webshim": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "Wijmo-Open": {
-            "count": 1,
-            "users": [
-                "rdworth"
-            ]
-        },
-        "qdoc": {
-            "count": 1,
-            "users": [
-                "rdworth"
             ],
-            "owner": "rdworth"
+            "owner": "iros"
         },
-        "qunitjs.com": {
+        "clientsidedata": {
             "count": 1,
             "users": [
-                "rdworth"
+                "iros"
             ],
-            "owner": "rdworth"
+            "owner": "iros"
         },
-        "temp-jqueryui": {
+        "deck.js-codemirror": {
             "count": 1,
             "users": [
-                "rdworth"
+                "iros"
             ],
-            "owner": "rdworth"
+            "owner": "iros"
         },
-        "the-boxer": {
+        "groupvis": {
             "count": 1,
             "users": [
-                "rdworth"
+                "iros"
             ],
-            "owner": "rdworth"
+            "owner": "iros"
+        },
+        "moonshine_nodejs": {
+            "count": 1,
+            "users": [
+                "iros"
+            ],
+            "owner": "iros"
+        },
+        "mp3app": {
+            "count": 1,
+            "users": [
+                "iros"
+            ],
+            "owner": "iros"
+        },
+        "nodecoptering": {
+            "count": 1,
+            "users": [
+                "iros"
+            ],
+            "owner": "iros"
+        },
+        "spotify-npr-allsongs": {
+            "count": 1,
+            "users": [
+                "iros"
+            ],
+            "owner": "iros"
+        },
+        "underscore.nest": {
+            "count": 1,
+            "users": [
+                "iros"
+            ],
+            "owner": "iros"
         },
         "django-userena": {
             "count": 1,
@@ -2311,375 +2084,6 @@
             ],
             "owner": "pkarl"
         },
-        "dojo-boilerplate": {
-            "count": 2,
-            "users": [
-                "rmurphey",
-                "rwldrn"
-            ],
-            "owner": "rmurphey"
-        },
-        "jquery-yui3-rosetta-stone": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "txjs2011_site": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "txjs2012": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "xqtouch": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "uptown": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "2012.jsconf.eu": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "berlinjs.org": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "bloody-jquery-plugins": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "cufon": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "dojo": {
-            "count": 2,
-            "users": [
-                "rmurphey",
-                "rwldrn"
-            ]
-        },
-        "ember.js": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "grunt-mocha": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "idiomatic.js": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "jshintrb": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "lawnchair": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "mulberry": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "mulberry-demos": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "node-chat": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "plugd": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "requirejs": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "reveal.js": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "simple-sprites": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "SlickGrid": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "tweetirc.js": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "twitterverse": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "waaa": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "xui": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ]
-        },
-        "arduino-display": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "blog-jekyll": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "blog-octopress": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "bvjs": {
-            "count": 2,
-            "users": [
-                "rmurphey",
-                "rwldrn"
-            ],
-            "owner": "rmurphey"
-        },
-        "dojo-demo": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "dojo-sandbox": {
-            "count": 2,
-            "users": [
-                "rmurphey",
-                "rwldrn"
-            ],
-            "owner": "rmurphey"
-        },
-        "dojo-scaffold": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "dojo-transformers": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "ffco": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "ffconf-mulberry-demo": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "flitter": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "frontend-dev-baseline": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "jmvc-sandbox": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "johnny-five-projects": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "jQuery-201": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "jQuery-Fundamentals-Temp": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "js-minty-fresh": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "js-sandbox": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "js-testing-boilerplates": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "mustache-cats": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "object-literals": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "project-euler": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "responsive-ui": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "rmurphey.github.com": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "sandbox": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "srchr-demo": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "srchr-ember": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
-        "testable-javascript": {
-            "count": 1,
-            "users": [
-                "rmurphey"
-            ],
-            "owner": "rmurphey"
-        },
         "tc39-codex-wiki": {
             "count": 1,
             "users": [
@@ -2726,6 +2130,13 @@
             "count": 1,
             "users": [
                 "rwldrn"
+            ]
+        },
+        "amplify": {
+            "count": 2,
+            "users": [
+                "rwldrn",
+                "rdworth"
             ]
         },
         "angular.js": {
@@ -2889,6 +2300,14 @@
             "users": [
                 "rwldrn"
             ]
+        },
+        "bvjs": {
+            "count": 2,
+            "users": [
+                "rwldrn",
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
         },
         "CamanDrop": {
             "count": 1,
@@ -3136,6 +2555,29 @@
                 "rwldrn"
             ]
         },
+        "dojo": {
+            "count": 2,
+            "users": [
+                "rwldrn",
+                "rmurphey"
+            ]
+        },
+        "dojo-boilerplate": {
+            "count": 2,
+            "users": [
+                "rwldrn",
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "dojo-sandbox": {
+            "count": 2,
+            "users": [
+                "rwldrn",
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
         "dom.js": {
             "count": 1,
             "users": [
@@ -3223,6 +2665,564 @@
                 "rwldrn"
             ],
             "owner": "rwldrn"
+        },
+        "jquery-yui3-rosetta-stone": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "txjs2011_site": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "txjs2012": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "xqtouch": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "uptown": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "2012.jsconf.eu": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "berlinjs.org": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "bloody-jquery-plugins": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "cufon": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "ember.js": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "grunt-mocha": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "idiomatic.js": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "jshintrb": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "lawnchair": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "mulberry": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "mulberry-demos": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "node-chat": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "plugd": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "requirejs": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "reveal.js": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "simple-sprites": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "SlickGrid": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "tweetirc.js": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "twitterverse": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "waaa": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "xui": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ]
+        },
+        "arduino-display": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "blog-jekyll": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "blog-octopress": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "dojo-demo": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "dojo-scaffold": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "dojo-transformers": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "ffco": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "ffconf-mulberry-demo": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "flitter": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "frontend-dev-baseline": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "jmvc-sandbox": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "johnny-five-projects": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "jQuery-201": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "jQuery-Fundamentals-Temp": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "js-minty-fresh": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "js-sandbox": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "js-testing-boilerplates": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "mustache-cats": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "object-literals": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "project-euler": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "responsive-ui": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "rmurphey.github.com": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "sandbox": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "srchr-demo": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "srchr-ember": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "testable-javascript": {
+            "count": 1,
+            "users": [
+                "rmurphey"
+            ],
+            "owner": "rmurphey"
+        },
+        "aviatejs": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "leaderboard": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jquery-ui-extensions": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "temp-jquery-bar": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "AnythingZoomer": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "community-updates": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "doT": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "fathom": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "grunt-compare-size": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "grunt-contrib-qunit": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jQCon-SF2012-Notes": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "JQuery-Combinators": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jquery-offline": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jquery-tmpl": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jquery-ui-carousel": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jquery-validation": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jquerypp": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jsdoc-toolkit": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "jsrender": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "king_tour": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "node-polyglot": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "node-wordpress": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "nodeguide.com": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "notmuch-web": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "olado.github.com": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "popcorn.sequence": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "simple-history": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "sizzle": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "svgboilerplate": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "UITest": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "webshim": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "Wijmo-Open": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ]
+        },
+        "qdoc": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ],
+            "owner": "rdworth"
+        },
+        "qunitjs.com": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ],
+            "owner": "rdworth"
+        },
+        "temp-jqueryui": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ],
+            "owner": "rdworth"
+        },
+        "the-boxer": {
+            "count": 1,
+            "users": [
+                "rdworth"
+            ],
+            "owner": "rdworth"
         }
     },
     "histogram": [
@@ -3234,5 +3234,22 @@
         1,
         1,
         2
+    ],
+    "users": [
+        "aprilnicolehart",
+        "boazsender",
+        "danheberden",
+        "dariusk",
+        "incompl",
+        "ajpiano",
+        "isaacdurazo",
+        "jorydotcom",
+        "cowboy",
+        "jugglinmike",
+        "iros",
+        "pkarl",
+        "rwldrn",
+        "rmurphey",
+        "rdworth"
     ]
 }

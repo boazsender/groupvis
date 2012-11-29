@@ -15,6 +15,9 @@ $(function() {
   // counter.
   var histogram = [];
 
+  // collaborators
+  var users;
+
   // my deferreds.
   var dataDeferred = $.Deferred(),
       dataProcessed = dataDeferred.promise();
@@ -23,6 +26,7 @@ $(function() {
   $.getJSON("data/bocoup_github.json").then(function(repos) {
     repoCountMap = repos.repos;
     histogram = repos.histogram;
+    users = repos.users;
 
     dataDeferred.resolve();
   }).fail(function(err) {
@@ -32,11 +36,26 @@ $(function() {
   dataProcessed.then(function() {
     chart = new BubbleChart({
       data : repoCountMap,
-      el : '#container'
+      el : '#container',
+      users: users,
+      template : _.template("<div class='bp-tooltip-name'><%= repo.name %></div>" +
+        "<% if (repo.owner) { %>" +
+        "  <div class='bp-tooltip-owner'>by <%= repo.owner %> </div>" +
+        "<% } %>" +
+        "<% if (repo.collaborators) { %>" +
+        "<div>Contributors:</div>" +
+        "<div class='bp-tooltip-contributors'><%= repo.collaborators.join(', ') %></div>" +
+        "<% } %>")
     });
 
     chart.start();
-    chart.display();
+    chart.display('moveTowardsCenter'); // start at center.
+
+
+    $('#controls div').click(function(e) {
+      var button = e.target;
+      chart.display(button.id);
+    })
   });
 
 }(this));

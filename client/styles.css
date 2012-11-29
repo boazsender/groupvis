@@ -1,0 +1,68 @@
+.bp-tooltip {
+  position : absolute;
+  visibility: hidden;
+  z-index: 10;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+   -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.bp-tooltip-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.bp-tooltip-owner {
+  font-size: 0.8em;
+  color: #444;
+  padding-left: 10px;
+}
+
+.bp-circle {
+  cursor: pointer;
+}
+
+#controls div {
+  width: 303px;
+  margin-left: 10px;
+  padding: 3px;
+  display: inline-block;
+  float: left;
+  background-color: #ddd;
+  filter: alpha(opacity=50); /* internet explorer */
+  -khtml-opacity: 0.5;      /* khtml, old safari */
+  -moz-opacity: 0.5;       /* mozilla, netscape */
+  opacity: 0.5;           /* fx, safari, opera */
+}
+
+#controls #moveTowardsUsers {
+  background-color: #EDD155;
+  color: #EDD155;
+}
+
+#controls #moveTowardsOwnerCenters {
+  background-color: #7aa25c;
+  color: #7aa25c;
+}
+
+#controls #moveTowardsCenter {
+  background-color: #B86CAF;
+  color: #B86CAF;
+}
+
+#controls #moveTowardsUsers:hover, 
+#controls #moveTowardsOwnerCenters:hover, 
+#controls #moveTowardsCenter:hover {
+  color: white;
+  font-weight:bold;
+}
+#controls div:hover {
+  cursor: pointer;
+  filter: alpha(opacity=80); /* internet explorer */
+  -khtml-opacity: 0.8;      /* khtml, old safari */
+  -moz-opacity: 0.8;       /* mozilla, netscape */
+  opacity: 0.8;           /* fx, safari, opera */
+}

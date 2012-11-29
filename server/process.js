@@ -51,7 +51,8 @@ bocoupData.getData().then(function(reposMap) {
 
   var output = {
     repos : reposCountMap,
-    histogram : histogram
+    histogram : histogram,
+    users : Object.keys(reposMap)
   };
   fs.writeJSONFileSync("data/bocoup_github.json", output);  
 }).fail(function(err) {

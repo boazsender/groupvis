@@ -5,16 +5,67 @@
 
     this.el = options.el;
     this.data = options.data;
+    this.users = options.users;
     this.width = options.width || 950;
     this.height = options.height || 440;
     this.color_mode = "collaboratorCount";
     this.max_collaborators = 0;
 
+    this.template = options.template || null;
+
     this.colorMode
+
+    // define centers
+    // global center
     this.center = {
       x : this.width / 2,
       y : this.height / 2
     };
+
+    // owner vs member
+    this.owner_centers = {
+      owned : {
+        x : this.width / 3,
+        y : this.height / 2
+      },
+      forked : {
+        x : (this.width / 3) * 2,
+        y : this.height / 2
+      }
+    };
+    
+    // per user
+    if (this.users) {
+      this.user_centers = {};
+      if (this.users.length < 5) {
+        // one row
+        for (var i = 0; i < this.users.length; i++) {
+          this.user_centers[this.users[i]] = {
+            x : (this.width / this.users.length) * (i + 1),
+            y : this.height / 2
+          };
+        }
+      } else {
+        // two rows, get top row
+        for (var i = 0; i < Math.ceil(this.users.length / 2); i++) {
+          this.user_centers[this.users[i]] = {
+            x : (this.width / Math.ceil(this.users.length / 2)) * (i + 1),
+            y : this.height / 3
+          }; 
+        }
+        // get bottom row
+        var counter = 1;
+        for (var i = Math.ceil(this.users.length / 2); i < this.users.length; i++) {
+          this.user_centers[this.users[i]] = {
+            x : (this.width / Math.floor(this.users.length / 2)) * counter,
+            y : (this.height / 3) * 2
+          }; 
+          counter++;
+        }
+        console.log(this.user_centers)
+      }
+    }
+
 
     this.layout_gravity = -0.01;
     this.damper = 0.1;
@@ -36,7 +87,7 @@
     this.radius_scale = d3.scale.pow()
       .exponent(0.5)
       .domain([0, this.max_collaborators])
-      .range([0, 25]); // TODO: play with max radius here...
+      .range([0, 18]); // TODO: play with max radius here...
 
     this.createNodes();
     this.createVis();
@@ -48,18 +99,24 @@
 
       var node = {
         id : repo,
-        radius : this.radius_scale(repoInfo.users.length),
-        value: repoInfo.users.length,
         name : repo,
+        value: repoInfo.users.length,
+        owner : repoInfo.owner || null,
+        collaborators : repoInfo.users,
+
+        // assign radius based on radius scale
+        radius : this.radius_scale(repoInfo.users.length),
+
+        // place randomly in space
         x : Math.random() * this.width,
         y : Math.random() * this.height,
-        collaborators : repoInfo.users
       };
 
       if (repoInfo.users.length > this.max_collaborators) {
         this.max_collaborators = repoInfo.users.length;
       }
 
+      // bin into groups based on collaborator count
       if (repoInfo.count === 1) {
         node.group = "one";
       } else if (repoInfo.count === 2) {
@@ -113,6 +170,7 @@
 
     this.circles.enter()
       .append("circle")
+      .classed("bp-circle", true)
       .attr("r", 0)
       .attr("fill", d_fill)
       .attr("stroke-width", 2)
@@ -121,8 +179,24 @@
       })
       .attr('id', function(d) {
         return "bubble_" + d.id;
+      })
+      .on("mouseover", function(d) { 
+        this.tooltip = new Tooltip(
+          // compile a template if we have one, otherwise, user name.
+          self.template ? self.template({ repo : d }) : d.name
+        );
+        this.tooltip.show(event);
+      })
+      .on("mouseout", function() {
+        this.tooltip.hide(event);
+        this.tooltip.remove(event);
+      })
+      .on("mousemove", function() {
+        this.tooltip.update(event);
+      })
+      .on("click", function(d) {
+
       });
-      // todo attach mouse overs!
 
     this.circles.transition()
       .duration(3000)
@@ -141,13 +215,13 @@
       .size([this.width, this.height]);
   };
 
-  BubbleChart.prototype.display = function() {
+  BubbleChart.prototype.display = function(move_function) {
     var self = this;
     this.force.gravity(this.layout_gravity)
       .charge(this.charge)
       //.friction(0.9)
       .on("tick", function(e) {
-        self.circles.each(self.moveTowardsCenter(e.alpha))
+        self.circles.each(self[move_function].apply(self, [e.alpha]))
           .attr("cx", function(d) { return d.x; })
           .attr("cy", function(d) { return d.y; })
       });
@@ -159,10 +233,44 @@
   BubbleChart.prototype.moveTowardsCenter = function(alpha) {
     var self = this;
     return function(d) {
-      d.x = d.x + (self.center.x - d.x) * (self.damper + 0.02) * alpha
-      d.y = d.y + (self.center.y - d.y) * (self.damper + 0.02) * alpha
+      d.x = d.x + (self.center.x - d.x) * (self.damper + 0.02) * alpha;
+      d.y = d.y + (self.center.y - d.y) * (self.damper + 0.02) * alpha;
     };
   };
+
+  BubbleChart.prototype.moveTowardsOwnerCenters = function(alpha) {
+    var self = this;
+    return function(d) {
+      var center;
+      if (d.owner !== null) {
+        center = self.owner_centers.owned;
+      } else {
+        center = self.owner_centers.forked;
+      }
+      d.x = d.x + (center.x - d.x) * (self.damper + 0.02) * alpha;
+      d.y = d.y + (center.y - d.y) * (self.damper + 0.02) * alpha;
+
+    }
+  };
+
+  BubbleChart.prototype.moveTowardsUsers = function(alpha) {
+    var self = this;
+    return function(d) {
+      // if we have an owner, move it into place. Otherwise, move it out of view.
+      if (d.owner !== null) {
+        center = self.user_centers[d.owner];
+      } else {
+        // out of view
+        center = {
+          x : d.x,
+          y : d.y > (self.height/2) ? self.height + 100 : self.height - 100
+        }
+      }
+
+      d.x = d.x + (center.x - d.x) * (self.damper + 0.02) * alpha;
+      d.y = d.y + (center.y - d.y) * (self.damper + 0.02) * alpha;
+    }
+  }
 
   // assign each user a color
   BubbleChart.prototype.getColors = function() {
