@@ -186,16 +186,25 @@
           self.template ? self.template({ repo : d }) : d.name
         );
         this.tooltip.show(event);
+        // if we have an owner, indicate it's clickable
+        if (d.owner !== null) {
+          d3.select(this).transition()
+            .attr("stroke-width", 5);
+        }
       })
       .on("mouseout", function() {
         this.tooltip.hide(event);
         this.tooltip.remove(event);
+        d3.select(this).transition().attr("stroke-width", 2);
       })
       .on("mousemove", function() {
         this.tooltip.update(event);
       })
       .on("click", function(d) {
-
+        if (d.owner !== null) {
+          window.open("http://github.com/" + d.owner + "/" + d.name);  
+        }
+        
       });
 
     this.circles.transition()
