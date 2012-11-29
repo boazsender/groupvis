@@ -1,13 +1,20 @@
 var GitHubApi = require("github");
 var Q = require("q");
+var fs = require('fs-extra');
 
 var github = new GitHubApi({
     version: "3.0.0"
 });
 
-github.authenticate({
-    type: "basic"
-});
+// get credentials from config.json. Should have:
+// { github : { username : "username", password: "password" } }
+// var config = fs.readJSONFileSync("config.json");
+
+// github.authenticate({
+//     type: "basic",
+//     username : config.github.username,
+//     password: config.github.password
+// });
 
 // -- get bocoup users
 var getBocoupUsers = function() {
@@ -28,7 +35,7 @@ var getUserRepos = function(user) {
   var all = Q.defer(),
       member_d = Q.defer(),
       owner_d = Q.defer(),
-      repos = [];
+      repos = { member : [], owner : [] };
 
   console.log("Fetching repos for " + user);
       
@@ -41,9 +48,8 @@ var getUserRepos = function(user) {
     if (err) {
       member_d.reject(err);
     } else {
-      
       res.forEach(function(repo) {
-        repos.push(repo.name);
+        repos.member.push(repo.name);
       });
       member_d.resolve(repos);
     }
@@ -59,7 +65,12 @@ var getUserRepos = function(user) {
       owner_d.reject(err);
     } else {
       res.forEach(function(repo) {
-        repos.push(repo.name);
+        if (repo.fork) {
+          repos.member.push(repo.name);
+        } else {
+          repos.owner.push(repo.name);
+        }
+        
       });
       owner_d.resolve(repos);
     }
@@ -95,18 +106,23 @@ var getAllUserRepos = function(users) {
   return deferred.promise;
 };
 
-// all the things.
-getBocoupUsers().then(function(users) {
-  getAllUserRepos(users).then(function(repos) {
-    var fs = require('fs');
-    fs.writeFile("repos.json", JSON.stringify(repos, null, 2), function(err) {
-      if(err) {
-          console.log(err);
-      } else {
-          console.log("The file was saved!");
-      }
-    }); 
+exports.getData = function() {
+  
+  var deferred = Q.defer();
+
+  // all the things.
+  getBocoupUsers().then(function(users) {
+    getAllUserRepos(users).then(function(repos) {
+      deferred.resolve(repos);
+    }).fail(function(err) {
+      deferred.reject(err);
+    });
+  }).fail(function(err) {
+    deferred.reject(err);
   });
 
-});
+  return deferred.promise;
+
+};
+
 

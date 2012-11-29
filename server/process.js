@@ -1,20 +1,34 @@
 var Q = require("q");
 var fs = require("fs-extra");
 
-var reposMap, reposCountMap = {}, histogram = [];
+var bocoupData = require('./data.js');
 
-var readReposMap = function(fileName) {
-  reposMap = fs.readJSONFileSync(fileName);
-};
+var reposCountMap = {}, histogram = [];
 
 var getRepoStats = function(repos) {
-  Object.keys(repos).forEach(function(user) {
-    var repolist = repos[user];
-    repolist.forEach(function(repo) {
-      reposCountMap[repo] = reposCountMap[repo] || { count : 0, users : [] }
+  
+  function processRepo(repo, user) {
+    reposCountMap[repo] = reposCountMap[repo] || { count : 0, users : [] }
+
+    if (reposCountMap[repo].users.indexOf(user) === -1) {
       reposCountMap[repo].count += 1
       reposCountMap[repo].users.push(user);
+    }
+  };
+
+  Object.keys(repos).forEach(function(user) {
+    var repolist = repos[user];
+    
+    // iterate over each member and each owner repo
+    repolist.member.forEach(function(repo) {
+      processRepo(repo, user)
     });
+    
+    repolist.owner.forEach(function(repo) {
+      processRepo(repo, user);
+      reposCountMap[repo].owner = user;
+    });
+
   });
 
   Object.keys(reposCountMap).forEach(function(repo) {
@@ -29,48 +43,19 @@ var getRepoStats = function(repos) {
       histogram[i] = 0;
     }
   }
-
-  console.log("Total repos " + Object.keys(reposCountMap).length);
 };
 
-var buildD3Graph = function(repos) {
-  var graph = {
-    nodes : [],
-    links : []
+// get data
+bocoupData.getData().then(function(reposMap) {
+  getRepoStats(reposMap);
+
+  var output = {
+    repos : reposCountMap,
+    histogram : histogram
   };
+  fs.writeJSONFileSync("data/bocoup_github.json", output);  
+}).fail(function(err) {
+  console.log(err);
+})
 
-  Object.keys(repos).forEach(function(repo) {
-    repoObj = repos[repo];
 
-    graph.nodes.push({
-      name : repo,
-      group : repoObj.count
-    });
-  });
-
-  return graph;
-};
-
-var buildCSV = function(repos) {
-  var csv = "name,collaborators\n";
-
-  Object.keys(repos).forEach(function(repo) {
-    repoObj = repos[repo];
-    csv += repo + "," + repoObj.count + "\n";
-  });  
-
-  var fs = require('fs');
-  fs.writeFile("repos.csv", csv, function(err) {
-    if(err) {
-        console.log(err);
-    } else {
-        console.log("The file was saved!");
-    }
-  });
-
-  return csv;
-};
-
-readReposMap("repos.json");
-getRepoStats(reposMap);
-console.log(buildCSV(reposCountMap));
